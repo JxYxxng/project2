@@ -1,14 +1,11 @@
 $(function(){
 	// 스크롤 이벤트
-
-	var a; // 메뉴
-	var t=0; // 스크롤 위치
-
-	var firstFlag=false; // 초기 스크롤
+	var a;
+	var t=0;
+	var firstFlag=false;
 
 	$("#header").addClass("active");
 	setTimeout(function(){
-		//console.log("한번실행");
 		$("html").animate({scrollTop : 0}, 800, function(){
 			firstFlag=true;
 			$(window).trigger("scroll");
