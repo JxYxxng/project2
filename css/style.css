@@ -234,11 +234,6 @@ textarea::placeholder {
 	#header .upper .logo {
 	margin-left: 10px;
 	}
-	#header .keyvisual .keytext {
-		left: 0;
-		margin-left: 0;
-		width: 100%;
-	}
 }
 @media only screen and (max-width: 720px) {
 	.top {
@@ -276,7 +271,7 @@ textarea::placeholder {
 	opacity: 0;
 	transition: opacity 2s;
 }
-#header.active .keyvisual .keytext {
+.keyvisual.active .keytext {
 	opacity: 1;
 }
 .keyvisual .keytext h2 {
@@ -344,7 +339,13 @@ textarea::placeholder {
 	margin-left: -1100px;
 	width: 2200px;
 }
-@media only screen and (max-width: 940px) {}
+@media only screen and (max-width: 940px) {
+	#header .keyvisual .keytext {
+		left: 0;
+		margin-left: 0;
+		width: 100%;
+	}
+}
 @media only screen and (max-width: 720px) {
  .keyvisual .keytext h2 {
 		line-height: 60px;
