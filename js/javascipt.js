@@ -4,7 +4,7 @@ $(function(){
 	var t=0;
 	var firstFlag=false;
 
-	$("#header").addClass("active");
+	$(".keyvisual").addClass("active");
 	setTimeout(function(){
 		$("html").animate({scrollTop : 0}, 800, function(){
 			firstFlag=true;
