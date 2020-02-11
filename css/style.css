@@ -20,7 +20,7 @@ body.active {
 	display: none;
 }
 /* COMMON CSS */
-h3.main_title {
+h3 {
 	text-align: center;
 	font-size: 1.875em;
 	font-weight: 700;
@@ -225,91 +225,6 @@ textarea::placeholder {
 	text-indent: -9999px;
 	overflow: hidden;
 }
-
-/*keyvisual*/
-#header .keyvisual {
-	position: absolute; left: 0;
-	width: 100%;
-}
-#header .keyvisual .keytext {
-	position: absolute; left: 50%; top: 50%;
-	margin-left: -470px;
-	margin-top: -140px;
-	z-index: 999;
-	width: 940px;
-	height: 200px;
-	text-align: center;
-	opacity: 0;
-	transition: opacity 2s;
-}
-#header.active .keyvisual .keytext {
-	opacity: 1;
-}
-#header .keyvisual .keytext h2 {
-	line-height: 80px;
-	font-size: 1.875em;
-	font-style: italic;
-	color: #fff;
-	font-family: 'Crimson Pro', serif;
-}
-#header .keyvisual .keytext span {
-	font-size: 2.7em;
-	font-weight: 700;
-	font-style: italic;
-	letter-spacing: -2px;
-	color: #22cace;
-	font-family: 'Roboto', sans-serif;
-}
-#header .keyvisual .keytext a {
-	display: block;
-	margin: 0 auto;
-	margin-top: 30px;
-	width: 200px;
-	height: 40px;
-	line-height: 38px;
-	text-align: center;
-	font-size: 0.9em;
-	font-weight: 700;
-	border-radius: 2px;
-	color: #fff;
-	border: 1px solid #fff;
-	transition: all 0.3s;
-}
-#header .keyvisual .keytext a:hover,
-#header .keyvisual .keytext a:focus {
-	color: #fed136;
-	border: 1px solid #fed136;
-}
-#header .keyvisual .keyimg {
-	position: relative;
-	width: 100%;
-	height: 700px;
-	overflow: hidden;
-}
-#header .keyvisual .keyimg::before {
-	position: absolute; left:0; top: 0;
-	content: "";
-	display: block;
-	z-index: 99;
-	width: 100%;
-	height: 700px;
-	background-color: rgba(0,0,0,0.7);
-}
-#header .keyvisual .keyimg ul {
-	position: absolute; top: 0;
-	width: 100%;
-	height: 700px;
-}
-#header .keyvisual .keyimg ul li {
-	position: relative;
-	float: left;
-	width: 100%;
-}
-#header .keyvisual .keyimg img {
-	position: absolute; left: 50%; top: 0;
-	margin-left: -1100px;
-	width: 2200px;
-}
 @media only screen and (max-width: 940px) {
 	#header .upper {
 		left: 0;
@@ -339,19 +254,110 @@ textarea::placeholder {
 	#header a.tab {
 		display: block;
 	}
-	#header .keyvisual .keytext h2 {
+}
+@media only screen and (max-width: 460px) {}
+@media only screen and (max-width: 360px) {
+}
+
+/*keyvisual*/
+.keyvisual {
+	position: absolute; left: 0; top: 0;
+	width: 100%;
+	height: 700px;
+}
+.keyvisual .keytext {
+	position: absolute; left: 50%; top: 50%;
+	margin-left: -470px;
+	margin-top: -140px;
+	z-index: 999;
+	width: 940px;
+	height: 200px;
+	text-align: center;
+	opacity: 0;
+	transition: opacity 2s;
+}
+#header.active .keyvisual .keytext {
+	opacity: 1;
+}
+.keyvisual .keytext h2 {
+	line-height: 80px;
+	font-size: 1.875em;
+	font-style: italic;
+	color: #fff;
+	font-family: 'Crimson Pro', serif;
+}
+.keyvisual .keytext span {
+	font-size: 2.7em;
+	font-weight: 700;
+	font-style: italic;
+	letter-spacing: -2px;
+	color: #22cace;
+	font-family: 'Roboto', sans-serif;
+}
+.keyvisual .keytext a {
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+	width: 200px;
+	height: 40px;
+	line-height: 38px;
+	text-align: center;
+	font-size: 0.9em;
+	font-weight: 700;
+	border-radius: 2px;
+	color: #fff;
+	border: 1px solid #fff;
+	transition: all 0.3s;
+}
+.keyvisual .keytext a:hover,
+.keyvisual .keytext a:focus {
+	color: #fed136;
+	border: 1px solid #fed136;
+}
+.keyvisual .keyimg {
+	position: relative;
+	width: 100%;
+	height: 700px;
+	overflow: hidden;
+}
+.keyvisual .keyimg::before {
+	position: absolute; left:0; top: 0;
+	content: "";
+	display: block;
+	z-index: 99;
+	width: 100%;
+	height: 700px;
+	background-color: rgba(0,0,0,0.7);
+}
+.keyvisual .keyimg ul {
+	position: absolute; top: 0;
+	width: 100%;
+	height: 700px;
+}
+.keyvisual .keyimg ul li {
+	position: relative;
+	float: left;
+	width: 100%;
+}
+.keyvisual .keyimg img {
+	position: absolute; left: 50%; top: 0;
+	margin-left: -1100px;
+	width: 2200px;
+}
+@media only screen and (max-width: 940px) {}
+@media only screen and (max-width: 720px) {
+ .keyvisual .keytext h2 {
 		line-height: 60px;
 		font-size: 1.6em;
 	}
 }
 @media only screen and (max-width: 460px) {
-	#header .keyvisual .keytext h2 {
+ .keyvisual .keytext h2 {
 		line-height: 60px;
 		font-size: 1.2em;
 	}
 }
-@media only screen and (max-width: 360px) {
-}
+@media only screen and (max-width: 360px) {}
 
 /* vr */
 #vr {
@@ -431,7 +437,6 @@ textarea::placeholder {
 
 /* portfolio */
 #portfolio {
-	/* min-width: 940px; */
 	background-color: #f7f7f7;
 }
 #portfolio .portfolio_inner {
