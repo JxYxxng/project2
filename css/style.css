@@ -340,7 +340,7 @@ textarea::placeholder {
 	width: 2200px;
 }
 @media only screen and (max-width: 940px) {
-	#header .keyvisual .keytext {
+	.keyvisual .keytext {
 		left: 0;
 		margin-left: 0;
 		width: 100%;
