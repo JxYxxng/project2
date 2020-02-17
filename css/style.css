@@ -989,14 +989,14 @@ textarea::placeholder {
 	opacity: 1;
 }
 #contact .contact_inner .content .text_area1 {
-	width: calc((100% - 30px)/2);
+	width: calc((100% - 31px)/2);
 	height: 200px;
 	margin-left: 10px;
 	margin-right: 10px;
 	float: left;
 }
 #contact .contact_inner .content .text_area2 {
-	width: calc((100% - 30px)/2);
+	width: calc((100% - 31px)/2);
 	height: 200px;
 	margin-right: 10px;
 	float: right;
@@ -1014,12 +1014,12 @@ textarea::placeholder {
 	#contact .contact_inner .content .text_area1 {
 		margin: 0 auto;
 		float: none;
-		width: calc(100% - 30px);
+		width: calc(100% - 31px);
 		margin-bottom: 25px;
 	}
 	#contact .contact_inner .content .text_area2 {
 		margin: 0 auto;
-		width: calc(100% - 30px);
+		width: calc(100% - 31px);
 		float: none;
 	}
 }
